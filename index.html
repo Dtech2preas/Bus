@@ -24,7 +24,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://wa.me/27717329214" target="_blank" class="btn btn-primary nav-btn">Book Now</a>
+            <a href="#" target="_blank" class="btn btn-primary nav-btn config-whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
 
             <!-- Mobile Menu Toggle -->
             <div class="mobile-menu-btn">
@@ -37,14 +37,52 @@
     <header id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
+            <div class="trust-badge">
+                <span class="stars">★★★★★</span>
+                <span class="trust-text">Trusted by Drivers Across Polokwane</span>
+            </div>
             <h1>Expert Auto Repair You Can Trust.</h1>
             <p>Providing top-quality mechanical services, diagnostics, and repairs to keep your car running safely and smoothly.</p>
             <div class="hero-buttons">
                 <a href="#services" class="btn btn-secondary">Our Services</a>
-                <a href="https://wa.me/27717329214" target="_blank" class="btn btn-primary">Message Us on WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-primary config-whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
             </div>
         </div>
     </header>
+
+    <!-- Business Credibility Section -->
+    <section class="credibility bg-light">
+        <div class="container credibility-container">
+            <div class="credibility-item">
+                <i class="fas fa-truck-pickup"></i>
+                <div class="credibility-text">
+                    <h4>Fast Breakdown Assistance</h4>
+                    <p>Quick response when you need it most</p>
+                </div>
+            </div>
+            <div class="credibility-item">
+                <i class="fas fa-wrench"></i>
+                <div class="credibility-text">
+                    <h4>Professional Repairs</h4>
+                    <p>Quality parts and expert mechanics</p>
+                </div>
+            </div>
+            <div class="credibility-item">
+                <i class="fas fa-shield-alt"></i>
+                <div class="credibility-text">
+                    <h4>Trusted Local Service</h4>
+                    <p>Honest pricing and reliable advice</p>
+                </div>
+            </div>
+            <div class="credibility-item">
+                <i class="fas fa-smile"></i>
+                <div class="credibility-text">
+                    <h4>Customer Satisfaction</h4>
+                    <p>Committed to getting you back on the road</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -94,8 +132,34 @@
         </div>
     </section>
 
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="reviews section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Real reviews from drivers in Polokwane.</p>
+            </div>
+            <div class="reviews-grid" id="reviews-container">
+                <!-- Reviews populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Workshop</h2>
+                <p>Take a look inside our fully equipped auto repair facility.</p>
+            </div>
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Gallery items will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
     <!-- About / Why Choose Us -->
-    <section id="about" class="about section bg-light">
+    <section id="about" class="about section">
         <div class="container about-container">
             <div class="about-content">
                 <h2>Why Choose Makhura Auto?</h2>
@@ -117,21 +181,25 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Google Maps & Contact Section -->
+    <section id="contact" class="contact section bg-light">
         <div class="container">
             <div class="section-title">
                 <h2>Get In Touch</h2>
                 <p>We're ready to help with your automotive needs.</p>
             </div>
 
-            <div class="contact-grid">
+            <div class="map-container" id="map-container">
+                <!-- Map populated by JS -->
+            </div>
+
+            <div class="contact-grid" style="margin-top: 40px;">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Location</h4>
-                            <p>[Insert Local Address Here]</p>
+                            <p class="config-address">[Insert Local Address Here]</p>
                         </div>
                     </div>
 
@@ -139,7 +207,7 @@
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Phone / WhatsApp</h4>
-                            <p>+27 71 732 9214</p> <!-- Example number, needs actual if available -->
+                            <p class="config-phone">+27 71 732 9214</p>
                         </div>
                     </div>
 
@@ -157,7 +225,7 @@
                 <div class="contact-cta">
                     <h3>Need an Appointment?</h3>
                     <p>The fastest way to reach us is via WhatsApp. Send us a message detailing your car's issue, and we'll get back to you with a quote or appointment time.</p>
-                    <a href="https://wa.me/27717329214" target="_blank" class="btn btn-whatsapp btn-large">
+                    <a href="#" target="_blank" class="btn btn-whatsapp btn-large config-whatsapp-link">
                         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                     </a>
                 </div>
@@ -182,12 +250,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Makhura Auto Repair Shop. Designed by DTECH.</p>
+            <p>&copy; <span id="year"></span> <span class="config-business-name">Makhura Auto Repair Shop</span>. All rights reserved.</p>
+            <p style="margin-top: 5px; font-size: 0.8rem; color: #888;">Website Powered by DTECH Services</p>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/27717329214" target="_blank" class="floating-whatsapp" title="Chat with us on WhatsApp">
+    <a href="#" target="_blank" class="floating-whatsapp config-whatsapp-link" title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
